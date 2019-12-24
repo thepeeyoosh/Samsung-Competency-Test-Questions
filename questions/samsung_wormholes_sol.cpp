@@ -1,3 +1,36 @@
+//=================================================================================================
+//				Coded By Peeyoosh Kumar Gupta					===
+//=================================================================================================
+
+//=================================================================================================
+//			Samsung Wormholes spaceship Problem and Solution			===
+//=================================================================================================
+//Question::
+// There is a source (S) and destination (D) and a spacecraft has to go from S to D. There are N number of wormholes in between
+// which has following properties:
+//  Each wormhole has an entry and an exit.
+//  Each wormhole is bi-directional i.e. one can enter and exit from any of the ends.
+// The time to cross the wormhole is given and the spacecraft may or may not use the wormhole to reach D.
+// The time taken to travel outside wormhole between two points (x1, y1) and (x2, y2) is given  
+// by a formula |x1 - x2| + |y1 - y2| where, (x1, y1) and (x2, y2) are the coordinates of two points.
+// The coordinates of S and D are given and we have to find the minimum time to reach D from S.
+// Note: It’s not mandatory to consider all the wormholes
+// Example : 
+//source=(0,0), destination(100,100), wormholes=3
+// coordinates are:          
+// (1,2),(120,120) Cost = 5
+// (4,5),(120,100) Cost = 21
+// (6,8),(150,180) Cost = 23
+//
+// Sample output=48
+//
+// Explanation:
+// Cost from (0,0) to (1,2) is 3
+// Cost of wormhole 1 is 5
+// Cost from (120,120) to (100,100) is 40
+// So, total 48 
+
+
 #include<iostream>
 using namespace std;
 #define size 5
